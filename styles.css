@@ -798,6 +798,9 @@ a {
   background-color: var(--accent-color);
   border: none;
 }
+.checkbox-input:focus + .checkbox-label .checkbox-icon {
+  border-color: var(--accent-color);
+}
 .checkbox-label {
   display: flex;
   justify-content: center;
