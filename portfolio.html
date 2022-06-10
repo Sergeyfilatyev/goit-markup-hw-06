@@ -320,14 +320,15 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
-          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
-          <form class="footer-form">
+            <form class="footer-form">
+            <label class="footer-form-label" for="footer_input_mail">Подпишитесь на рассылку</label>
+             <div class="footer-form-wrap">
             <input
               class="footer-form-input"
               type="email"
               name="user-mail"
               placeholder="E-mail"
+              id="footer_input_mail"
               required
             />
             <button class="btn-footer-form" type="submit">
@@ -336,6 +337,7 @@
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
+             </div>
           </form>
         </div>
       </div>
