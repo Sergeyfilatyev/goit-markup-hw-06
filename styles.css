@@ -676,10 +676,13 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms var(--cubic-beizer-hover);
+  transition: transform 250ms var(--cubic-beizer-hover), opacity 250ms var(--cubic-beizer-hover),
+    visibility 250ms var(--cubic-beizer-hover);
 }
-.backdrop.is-hidden .modal-form {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  visibility: hidden;
 }
 .btn-close {
   position: absolute;
@@ -798,9 +801,7 @@ a {
   background-color: var(--accent-color);
   border: none;
 }
-.checkbox-input:focus + .checkbox-label .checkbox-icon {
-  border-color: var(--accent-color);
-}
+
 .checkbox-label {
   display: flex;
   justify-content: center;
