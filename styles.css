@@ -588,6 +588,65 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+.footer-form-container {
+  margin-left: 93px;
+}
+.footer-form-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.footer-form-input::placeholder {
+  color: var(--footer-color);
+}
+.btn-footer-form {
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--cubic-beizer-hover);
+}
+
+.btn-footer-form:focus,
+.btn-footer-form:hover {
+  background-color: var(--btn-hover);
+}
+.btn-footer-mail-icon {
+  fill: var(--white-text-color);
+  margin-left: 10px;
+}
 
 /* Modal-backdrop */
 
@@ -636,6 +695,14 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.close-icon {
+  fill: #000000;
+  transition: fill 250ms var(--cubic-beizer-hover);
+}
+.btn-close:focus .close-icon,
+.btn-close:hover .close-icon {
+  fill: var(--accent-color);
+}
 
 /* Contact form */
 
@@ -667,6 +734,10 @@ a {
   padding-left: 42px;
   width: 100%;
   height: 40px;
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms var(--cubic-beizer-hover);
@@ -703,6 +774,10 @@ a {
   border-radius: 4px;
   resize: none;
   transition: border-color 250ms var(--cubic-beizer-hover);
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
 }
 .comentary-area::placeholder {
   font-size: 12px;
@@ -710,8 +785,19 @@ a {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.checkbox-icon {
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 250ms var(--cubic-beizer-hover),
+    border 250ms var(--cubic-beizer-hover);
+}
 
-.checkbox-agreement {
+.checkbox-input:checked + .checkbox-label .checkbox-icon {
+  background-color: var(--accent-color);
+  border: none;
+}
+.checkbox-label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,10 +805,17 @@ a {
 }
 .agreement {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.72;
   letter-spacing: 0.03em;
   margin-left: 8px;
   color: var(--main-color);
+}
+.link-agreement {
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 .btn-form {
   padding: 10px 55px;
@@ -738,4 +831,9 @@ a {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--cubic-beizer-hover);
+}
+.btn-form:focus,
+.btn-form:hover {
+  background-color: var(--btn-hover);
 }

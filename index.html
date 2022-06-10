@@ -432,7 +432,7 @@
           </address>
         </div>
         <div class="footer-right">
-          <h2 class="footer-social-title">присоединяйтесь</h2>
+          <h3 class="footer-social-title">присоединяйтесь</h3>
           <ul class="social-list">
             <li class="social-item">
               <a
@@ -475,6 +475,24 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form-container">
+          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="user-mail"
+              placeholder="E-mail"
+              required
+            />
+            <button class="btn-footer-form" type="submit">
+              Подписаться
+              <svg class="btn-footer-mail-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -539,13 +557,26 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="checkbox-agreement">
-            <input type="checkbox" name="user_agreement" required />
-            <p class="agreement">
-              Соглашаюсь с рассылкой и принимаю<a class="link-agreement" href="/"
+          <input
+            class="checkbox-input hidden"
+            id="checkbox_user_agreement"
+            type="checkbox"
+            name="user_agreement"
+            required
+          />
+          <label class="checkbox-label" for="checkbox_user_agreement">
+            <svg class="checkbox-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="agreement">
+              Соглашаюсь с рассылкой и принимаю&nbsp<a
+                class="link-agreement"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Условия договора</a
               >
-            </p></label
+            </span></label
           >
           <button class="btn-form" type="submit">Отправить</button>
         </form>
