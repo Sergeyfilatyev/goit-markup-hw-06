@@ -801,10 +801,10 @@ a {
   transition: background-color 250ms var(--cubic-beizer-hover),
     border 250ms var(--cubic-beizer-hover);
 }
-.checkbox-input {
+/* .checkbox-input {
   position: absolute;
   appearance: none;
-}
+} */
 
 .checkbox-input:checked + .checkbox-label .checkbox-icon {
   background-color: var(--accent-color);
